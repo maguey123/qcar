@@ -128,7 +128,8 @@ rm -rf UON-QCAR-BASE
 
 source /opt/ros/noetic/setup.bash
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-echo "cd /mnt/c/Users/$WIN_USERNAME/Documents/RosGazebo/catkin_ws"
+echo "cd /mnt/c/Users/$WIN_USERNAME/Documents/RosGazebo/catkin_ws" >> ~/.bashrc
+echo "source devel/setup.bash" >> ~/.bashrc
 
 # Build the catkin workspace
 if ! catkin_make; then
